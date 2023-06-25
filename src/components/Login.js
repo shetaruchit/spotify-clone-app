@@ -1,5 +1,5 @@
 import React from 'react';
-import spotify_bw from "../image/spotify2019-830x350.jpg";
+import spotify_bw from "../image/Spotify_Logo_RGB_White.png";
 import "../components/Login.css";
 import { loginUrl } from '../spotify';
 
