@@ -31,6 +31,8 @@ function App() {
           type: "SET_USER",
           user: user,
         });
+
+        console.log("ME>>",user)
       });
 
       spotify.getUserPlaylists().then((playlists) => {
@@ -42,11 +44,20 @@ function App() {
         // console.log("fuck",playlists);
       });
 
+       spotify.getPlaylist("3yJRgiB1vAKDWtJTmGpVUY").then((response)=>{
+        dispatch({
+          type:"SET_RUNNING_PLAYLIST",
+          running_playlist:response
+        });
+
+        console.log("CURR",response);
+      });
+
+
     }
     // console.log("I HEAVE TOKEN>>", token);
   }, []);
 
-  // console.log("ME>>",user)
   // console.log(":ruct >>",token)
   return (
     <div className="app">
