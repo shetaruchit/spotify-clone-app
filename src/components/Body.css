@@ -1,5 +1,4 @@
 .body{
-    border: 1px solid red;
     padding: 30px;
     height: 100vh;
     color: white;
@@ -13,7 +12,6 @@
 }
 
 .body__info{
-    border: 1px solid rgb(18, 103, 29);
     display: flex;
     align-items: center;
     padding:10px;
@@ -26,7 +24,6 @@
 }
 
 .body__infoText{
-    border: 1px solid rgb(145, 255, 0);
     flex: 1;
 }
 
