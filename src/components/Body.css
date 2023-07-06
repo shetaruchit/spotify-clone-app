@@ -1,12 +1,22 @@
 .body{
-    padding: 30px;
     height: 100vh;
+    position: relative;
     color: white;
-    flex: 1;
-    background: linear-gradient( rgb(91, 87, 115),#000000);
+    flex:1;
+    background: linear-gradient( rgb(100, 225, 229) 0%,#000000);
     overflow-y: overlay;
 }
 
+.body__uper{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color:  rgb(100, 225, 229);
+    background: linear-gradient(rgb(100, 225, 229) ,rgba(0,94,97,0.5));
+}
+
+.body__lower{
+    padding-left:15px;
+}
 .body::-webkit-scrollbar{
     display:  none;
 }
@@ -28,12 +38,12 @@
 }
 
 .body__infoText > h2{
-    font-size: 64px;
+    font-size: 95px;
     margin-bottom: 10px;
 }
 
 .body__infoText > p {
-   font-size: 14px;
+   font-size: 20px;
 }
 
 .body__icons{
@@ -50,6 +60,8 @@
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
 .body__shuffle:hover{
